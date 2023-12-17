@@ -1,0 +1,66 @@
+.start-display,
+.score-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+.header {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 5px solid palevioletred;
+}
+.progress {
+  width: 50%;
+}
+
+#display-container {
+  background-color: pink;
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%); /*Not sure what this is doing*/
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+}
+
+.timer-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.options-div:disabled {
+  cursor: not-allowed;
+}
+
+#next-button {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+.correct {
+  color: rgb(17, 139, 62);
+  border: rgb(6, 71, 25);
+}
+
+.incorrect {
+  color: red;
+  border: maroon;
+}
+#user-score {
+  color: navy;
+}

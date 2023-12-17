@@ -16,26 +16,43 @@
 
   <body>
     <div class="start-display">
-      <button id="start-button">Start</button>
+      <button id="start-button" class="btn btn-primary btn-lg">Start</button>
     </div>
+
     <div id="display-container">
       <div class="header">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 25%"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            25%
+          </div>
+        </div>
+
         <div class="count-number">
           <span class="question-number"> 1 of 5 questions </span>
         </div>
+
         <div class="timer">
           <img src="./assets/img/hourclock.gif" alt="hourclock" width="35px" />
           <span class="time-left">10s</span>
         </div>
       </div>
+
       <div id="container">
         <!-- space left for questions and options to be displayed in here -->
       </div>
-      <button id="next-button">Next</button>
+
+      <button id="next-button" class="btn btn-outline-primary">Next</button>
     </div>
-    <div class="score-cointaner hide">
+    <div class="score-container hide">
       <div id="user-score">My score</div>
-      <button class="restart">Restart</button>
+      <button class="restart btn btn-warning">Restart</button>
     </div>
 
     <script src="./assets/script.js"></script>
