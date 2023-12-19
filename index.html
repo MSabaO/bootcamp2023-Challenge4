@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saint John Quizz</title>
+    <title>Saint John Quiz</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link
       rel="stylesheet"
@@ -15,12 +15,13 @@
   </head>
 
   <body>
-    <div class="start-display">
+    <div class="start-screen">
       <button id="start-button" class="btn btn-primary btn-lg">Start</button>
     </div>
 
     <div id="display-container">
       <div class="header">
+        <!-- added progress bar -->
         <div class="progress">
           <div
             class="progress-bar"
@@ -34,11 +35,11 @@
           </div>
         </div>
 
-        <div class="count-number">
-          <span class="question-number"> 1 of 5 questions </span>
+        <div class="number-of-count">
+          <span class="number-of-question"> 1 of 5 questions </span>
         </div>
 
-        <div class="timer">
+        <div class="timer-div">
           <img src="./assets/img/hourclock.gif" alt="hourclock" width="35px" />
           <span class="time-left">10s</span>
         </div>
@@ -50,11 +51,12 @@
 
       <button id="next-button" class="btn btn-outline-primary">Next</button>
     </div>
+
     <div class="score-container hide">
       <div id="user-score">My score</div>
-      <button class="restart btn btn-warning">Restart</button>
+      <button id="restart" class="btn btn-warning">Restart</button>
     </div>
 
-    <script src="./assets/script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>

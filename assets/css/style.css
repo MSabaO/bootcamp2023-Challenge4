@@ -1,4 +1,12 @@
-.start-display,
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: none;
+}
+
+.start-screen,
 .score-container {
   position: absolute;
   width: 100%;
@@ -10,17 +18,6 @@
 }
 button {
   cursor: pointer;
-}
-.header {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 5px;
-  border-bottom: 5px solid palevioletred;
-}
-.progress {
-  width: 50%;
 }
 
 #display-container {
@@ -35,10 +32,39 @@ button {
   left: 50%;
 }
 
-.timer-div {
+.header {
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 5px solid palevioletred;
+}
+
+.progress {
+  width: 50%;
+}
+
+.timer-div {
+  background-color: palevioletred;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+.question {
+  margin: 10px auto;
+}
+
+.option-div {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 3px solid palevioletred;
+  border-radius: 5px;
 }
 
 .options-div:disabled {
@@ -60,7 +86,4 @@ button {
 .incorrect {
   color: red;
   border: maroon;
-}
-#user-score {
-  color: navy;
 }
