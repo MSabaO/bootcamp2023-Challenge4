@@ -32,6 +32,25 @@ const quizArray = [
     options: ["Wolastoq", "French river", "Fundy river", "Long river"],
     correct: "Wolastoq",
   },
+
+  {
+    id: "2",
+    question: "Saint John's economy has been largely derived from  ___________",
+    options: ["Maritime industry", "Technology", "Manufacturing", "Tourism"],
+    correct: "Maritime industry",
+  },
+
+  {
+    id: "3",
+    question: "What can you find in the Saint John's City Market?",
+    options: [
+      "Local produce",
+      "Fresh seafood",
+      "old-fashioned butchers",
+      "All of the options",
+    ],
+    correct: "All of the options",
+  },
 ];
 
 restart.addEventListener("click", () => {

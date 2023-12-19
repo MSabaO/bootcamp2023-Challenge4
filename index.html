@@ -16,7 +16,14 @@
 
   <body>
     <div class="start-screen">
+      <img
+        src="https://travel.usnews.com/dims4/USNEWS/4a73700/2147483647/resize/600x400%5E%3E/crop/600x400/quality/85/?url=https%3A%2F%2Ftravel.usnews.com%2Fimages%2Freversing_falls_bridge_FKIgo5A.jpg"
+        alt="Picture of Saint John harbour"
+        class="initial-img"
+      />
+      <div class="centered">Saint John Quiz</div>
       <button id="start-button" class="btn btn-primary btn-lg">Start</button>
+      <button id="high-score" class="btn btn-primary">High Scores</button>
     </div>
 
     <div id="display-container">
@@ -54,7 +61,26 @@
 
     <div class="score-container hide">
       <div id="user-score">My score</div>
+
+      <!-- User initials capture -->
+      <form>
+        <div class="user-initials">
+          <label for="user-initials">Email address</label>
+          <input
+            type="name"
+            class="form-control"
+            id="user-initials"
+            aria-describedby="emailHelp"
+            placeholder="Enter initials"
+          />
+          <button type="submit" class="btn btn-primary in-line">Submit</button>
+        </div>
+      </form>
+
+      <!-- restart and high-score buttons -->
+
       <button id="restart" class="btn btn-warning">Restart</button>
+      <button id="high-score" class="btn btn-primary">High Scores</button>
     </div>
 
     <script src="./assets/javascript/script.js"></script>
