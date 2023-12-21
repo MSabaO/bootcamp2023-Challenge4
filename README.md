@@ -1,22 +1,23 @@
 # bootcamp2023-Challenge4
 
-Description
+**Description**
 This challenge was completed to demonstrate the use what I have learned of javascript during week #4 of the UNB Coding Bootcamp.
 
 In this opportunity I was able create a short quiz.
 
 Unfortunately, I was not able to make it fully functional and I will try another attempt later. Missing display high scores.
 
-Installation
+**Installation**
 To access the webpage, please follow this link in a web browser:
 ![Alt text](image.png)
 
-Usage
+**Usage**
 In this webpage you can take a short quiz of Saint John, New Brunswick's fun facts. You have 10 secons to answer each question
 
 ![Alt text](image-1.png)
 ![Alt text](image-2.png)
-License
+
+**License**
 MIT License
 
 Copyright (c) 2023 Maika Saba
