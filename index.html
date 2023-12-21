@@ -28,7 +28,7 @@
 
     <div id="display-container">
       <div class="header">
-        <!-- added progress bar -->
+        <!-- added progress bar
         <div class="progress">
           <div
             class="progress-bar"
@@ -40,7 +40,7 @@
           >
             25%
           </div>
-        </div>
+        </div> -->
 
         <div class="number-of-count">
           <span class="number-of-question"> 1 of 5 questions </span>
@@ -48,7 +48,7 @@
 
         <div class="timer-div">
           <img src="./assets/img/hourclock.gif" alt="hourclock" width="35px" />
-          <span class="time-left">10s</span>
+          <span class="time-left"></span>
         </div>
       </div>
 
@@ -65,22 +65,33 @@
       <!-- User initials capture -->
       <form>
         <div class="user-initials">
-          <label for="user-initials">Email address</label>
-          <input
-            type="name"
-            class="form-control"
-            id="user-initials"
-            aria-describedby="emailHelp"
-            placeholder="Enter initials"
-          />
-          <button type="submit" class="btn btn-primary in-line">Submit</button>
+          <form id="save-score-form">
+            <label for="user-initials">Enter initials</label>
+            <input
+              type="text"
+              id="initials"
+              name="initials"
+              placeholder="Enter initials"
+            />
+            <button type="submit" id="submit" class="btn btn-primary in-line">
+              Submit
+            </button>
+          </form>
         </div>
       </form>
 
       <!-- restart and high-score buttons -->
 
       <button id="restart" class="btn btn-warning">Restart</button>
-      <button id="high-score" class="btn btn-primary">High Scores</button>
+      <button id="high-score-button" class="btn btn-primary">
+        High Scores
+      </button>
+    </div>
+    <!-- display high-score -->
+    <div id="high-scores-screen" style="display: none">
+      <h2>High Scores</h2>
+      <ul id="high-scores-list"></ul>
+      <button id="go-back" class="btn btn-secondary">Go Back</button>
     </div>
 
     <script src="./assets/javascript/script.js"></script>
